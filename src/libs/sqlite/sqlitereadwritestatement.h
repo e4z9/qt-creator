@@ -38,7 +38,6 @@ public:
 
     using StatementImplementation::execute;
     using StatementImplementation::readCallback;
-    using StatementImplementation::readTo;
     using StatementImplementation::toValue;
     using StatementImplementation::value;
     using StatementImplementation::values;
