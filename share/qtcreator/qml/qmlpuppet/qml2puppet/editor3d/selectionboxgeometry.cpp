@@ -211,14 +211,25 @@ QSSGRenderGraphObject *SelectionBoxGeometry::updateSpatialNode(QSSGRenderGraphOb
         appendVertexData(QMatrix4x4(), vertexData, indexData, minBounds, maxBounds);
     }
 
+#if QT_VERSION < QT_VERSION_CHECK(6, 1, 0)
     geometry->addAttribute(QSSGRenderGeometry::Attribute::PositionSemantic, 0,
                            QSSGRenderGeometry::Attribute::ComponentType::F32Type);
-    geometry->addAttribute(QSSGRenderGeometry::Attribute::IndexSemantic, 0,
+    geometry->addAttribute(QSSGRenderGeometry::Attribute::IndexSemantic,
+                           0,
                            QSSGRenderGeometry::Attribute::ComponentType::U16Type);
+    geometry->setPrimitiveType(QSSGRenderGeometry::Lines);
+#else
+    geometry->addAttribute(QSSGMesh::RuntimeMeshData::Attribute::PositionSemantic,
+                           0,
+                           QSSGMesh::Mesh::ComponentType::Float32);
+    geometry->addAttribute(QSSGMesh::RuntimeMeshData::Attribute::IndexSemantic,
+                           0,
+                           QSSGMesh::Mesh::ComponentType::UnsignedInt16);
+    geometry->setPrimitiveType(QSSGMesh::Mesh::DrawMode::Lines);
+#endif
     geometry->setStride(12);
     geometry->setVertexData(vertexData);
     geometry->setIndexData(indexData);
-    geometry->setPrimitiveType(QSSGRenderGeometry::Lines);
     geometry->setBounds(minBounds, maxBounds);
 
     m_bounds = QSSGBounds3(minBounds, maxBounds);
