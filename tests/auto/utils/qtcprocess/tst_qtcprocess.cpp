@@ -938,6 +938,6 @@ void tst_QtcProcess::lineCallbackIntern()
     QCOMPARE(lineNumber, lines.size());
 }
 
-QTEST_MAIN(tst_QtcProcess)
+QTEST_GUILESS_MAIN(tst_QtcProcess)
 
 #include "tst_qtcprocess.moc"

@@ -2209,7 +2209,7 @@ void tst_CodeFormatter::lambdaWithReturnType()
     checkIndent(data);
 }
 
-QTEST_MAIN(tst_CodeFormatter)
+QTEST_GUILESS_MAIN(tst_CodeFormatter)
 
 #include "tst_codeformatter.moc"
 

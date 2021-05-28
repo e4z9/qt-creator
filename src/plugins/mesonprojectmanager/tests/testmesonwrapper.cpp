@@ -107,5 +107,5 @@ private slots:
     void cleanupTestCase() {}
 };
 
-QTEST_MAIN(AMesonWrapper)
+QTEST_GUILESS_MAIN(AMesonWrapper)
 #include "testmesonwrapper.moc"

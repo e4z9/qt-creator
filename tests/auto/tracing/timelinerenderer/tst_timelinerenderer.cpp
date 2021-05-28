@@ -175,6 +175,6 @@ void tst_TimelineRenderer::mouseEvents()
     QCOMPARE(renderer.selectionLocked(), true);
 }
 
-QTEST_MAIN(tst_TimelineRenderer)
+QTEST_GUILESS_MAIN(tst_TimelineRenderer)
 
 #include "tst_timelinerenderer.moc"

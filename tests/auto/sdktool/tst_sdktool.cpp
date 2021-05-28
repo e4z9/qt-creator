@@ -49,6 +49,6 @@ void SdktoolTest::testSdktool()
     QCOMPARE(process.exitCode(), 0);
 }
 
-QTEST_MAIN(SdktoolTest)
+QTEST_GUILESS_MAIN(SdktoolTest)
 
 #include "tst_sdktool.moc"

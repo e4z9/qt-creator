@@ -158,7 +158,7 @@ void tst_TimelineItemsRenderPass::update()
     runSceneGraphTest(parentState.expandedRowRoot());
 }
 
-QTEST_MAIN(tst_TimelineItemsRenderPass)
+QTEST_GUILESS_MAIN(tst_TimelineItemsRenderPass)
 
 #include "tst_timelineitemsrenderpass.moc"
 

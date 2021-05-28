@@ -174,6 +174,6 @@ void tst_FlameGraphView::testZoom()
     QTRY_COMPARE(selectedTypeId(), typeId1);
 }
 
-QTEST_MAIN(tst_FlameGraphView)
+QTEST_GUILESS_MAIN(tst_FlameGraphView)
 
 #include "tst_flamegraphview.moc"

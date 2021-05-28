@@ -113,5 +113,5 @@ private slots:
     void cleanupTestCase() {}
 };
 
-QTEST_MAIN(AMesonInfoParser)
+QTEST_GUILESS_MAIN(AMesonInfoParser)
 #include "testmesoninfoparser.moc"

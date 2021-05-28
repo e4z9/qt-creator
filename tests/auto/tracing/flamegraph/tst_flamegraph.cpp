@@ -156,6 +156,6 @@ void DelegateComponent::completeCreate()
 {
 }
 
-QTEST_MAIN(tst_FlameGraph)
+QTEST_GUILESS_MAIN(tst_FlameGraph)
 
 #include "tst_flamegraph.moc"

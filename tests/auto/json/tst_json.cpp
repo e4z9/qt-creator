@@ -2526,6 +2526,6 @@ void tst_Json::removeNonLatinKey()
     QVERIFY(restoredObject.contains(nonLatinKeyName));
 }
 
-QTEST_MAIN(tst_Json)
+QTEST_GUILESS_MAIN(tst_Json)
 
 #include "tst_json.moc"

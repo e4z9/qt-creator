@@ -745,5 +745,5 @@ void tst_ProFileWriter::removeFiles()
 }
 
 
-QTEST_MAIN(tst_ProFileWriter)
+QTEST_GUILESS_MAIN(tst_ProFileWriter)
 #include "tst_profilewriter.moc"

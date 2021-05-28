@@ -632,6 +632,6 @@ bool tst_Ssh::waitForConnection(SshConnection &connection)
     return connection.state() == SshConnection::Connected && connection.errorString().isEmpty();
 }
 
-QTEST_MAIN(tst_Ssh)
+QTEST_GUILESS_MAIN(tst_Ssh)
 
 #include <tst_ssh.moc>

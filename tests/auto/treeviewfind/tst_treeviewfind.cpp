@@ -147,6 +147,6 @@ void tst_treeviewfind::columns()
     delete tree;
 }
 
-QTEST_MAIN(tst_treeviewfind)
+QTEST_GUILESS_MAIN(tst_treeviewfind)
 
 #include "tst_treeviewfind.moc"

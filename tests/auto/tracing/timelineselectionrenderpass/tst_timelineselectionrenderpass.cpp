@@ -176,7 +176,7 @@ void tst_TimelineSelectionRenderPass::update()
     runSceneGraphTest(parentState.expandedOverlayRoot());
 }
 
-QTEST_MAIN(tst_TimelineSelectionRenderPass)
+QTEST_GUILESS_MAIN(tst_TimelineSelectionRenderPass)
 
 #include "tst_timelineselectionrenderpass.moc"
 

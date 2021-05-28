@@ -99,6 +99,6 @@ void tst_TemplateEngine::testTemplateEngine()
 }
 
 
-QTEST_MAIN(tst_TemplateEngine)
+QTEST_GUILESS_MAIN(tst_TemplateEngine)
 
 #include "tst_templateengine.moc"

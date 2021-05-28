@@ -269,7 +269,7 @@ void BenchmarkJson::jsonObjectInsertStd()
     }
 }
 
-QTEST_MAIN(BenchmarkJson)
+QTEST_GUILESS_MAIN(BenchmarkJson)
 
 #include "tst_bench_json.moc"
 

@@ -173,7 +173,7 @@ void BenchmarkSignals::manualLambda()
     }
 }
 
-QTEST_MAIN(BenchmarkSignals)
+QTEST_GUILESS_MAIN(BenchmarkSignals)
 
 #include "tst_bench_signals.moc"
 

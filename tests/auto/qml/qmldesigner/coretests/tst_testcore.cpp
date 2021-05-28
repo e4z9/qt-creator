@@ -8575,4 +8575,4 @@ void tst_TestCore::readAnnotations()
 }
 
 
-QTEST_MAIN(tst_TestCore);
+QTEST_GUILESS_MAIN(tst_TestCore);
